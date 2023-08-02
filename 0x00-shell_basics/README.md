@@ -5,3 +5,4 @@ ls -l - display current directory contents in a long format
 ls -al - display current directory contents including hidden
 ls -al -n - display current directory contents including group ids
 mkdir /tmp/my_first_directory - creates a directory in the tmp directory 
+mv /tmp/betty /tmp/my_first_directory - moves the betty file from one direcrtory to another 
