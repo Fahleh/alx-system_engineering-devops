@@ -11,3 +11,4 @@ chmod 753 hello: Grants permission -rwxr-x-wx to file hello
 chmod --reference=olleh hello: Mirrors the mode of olleh into hello
 chmod -R ugo+x .: Recursively grants full permissions to all subdirectories of the current directory
 mkdir -m 751 my_dir: Creates a directory called my_dir with permissions 751 in the working directory.
+chgrp school hello: Changes the group owner to school for the file hello
