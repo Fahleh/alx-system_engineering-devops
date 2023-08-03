@@ -15,3 +15,4 @@ ln -s /bin/ls __ls__ - Creates a symbolic link
 cp -u *.html .. - copy html files to parent directory if not found or newer
 mv [[:upper:]]* /tmp/u - Move all filers beginning with uppercase
 rm *~ - Delete all files ending with ~
+mkdir -p welcome/to/school - Creates a directory and its parent directories
