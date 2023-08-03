@@ -9,3 +9,4 @@ mv /tmp/betty /tmp/my_first_directory - moves the betty file from one direcrtory
 rm /tmp/my_first_directory/betty - Delete the file betty
 rm -r /tmp/my_first_directory - Delete the directory my_first_directory
 cd - - Change working directory to previous one
+ls -al .. - List all files including the parent & boot directories
