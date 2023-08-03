@@ -10,3 +10,4 @@ rm /tmp/my_first_directory/betty - Delete the file betty
 rm -r /tmp/my_first_directory - Delete the directory my_first_directory
 cd - - Change working directory to previous one
 ls -al . .. - List all files including the parent & boot directories
+file /tmp/iamafile - Prints the file type of iamafile
