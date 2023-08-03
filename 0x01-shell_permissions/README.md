@@ -9,4 +9,4 @@ chmod ugo+x hello: Adds execution permission to the owner, the group owner and t
 chmod 007 hello: Grants full permissons to others and none to both owner and group owner
 chmod 753 hello: Grants permission -rwxr-x-wx to file hello
 chmod --reference=olleh hello: Mirrors the mode of olleh into hello
-chmod -R 777 0x01-shell_permissions: Recursively grants full permissions to all subdirectories
+chmod -R ugo+x .: Recursively grants full permissions to all subdirectories of the current directory
