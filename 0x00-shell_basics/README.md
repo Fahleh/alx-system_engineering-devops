@@ -16,4 +16,4 @@ cp -u *.html .. - copy html files to parent directory if not found or newer
 mv [[:upper:]]* /tmp/u - Move all filers beginning with uppercase
 rm *~ - Delete all files ending with ~
 mkdir -p welcome/to/school - Creates a directory and its parent directories
-ls -al -F -m - Lists the content of working directory separated by a comma
+ls -xamp - Lists the content of working directory separated by a comma
