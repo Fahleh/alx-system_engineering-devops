@@ -6,3 +6,4 @@ ls -al - display current directory contents including hidden
 ls -al -n - display current directory contents including group ids
 mkdir /tmp/my_first_directory - creates a directory in the tmp directory 
 mv /tmp/betty /tmp/my_first_directory - moves the betty file from one direcrtory to another 
+rm /tmp/my_first_directory/betty - Delete the file betty
