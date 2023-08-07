@@ -17,5 +17,5 @@ grep -c -i 'bin' /etc/passwd: Displays the number of lines that contain the patt
 grep -i 'root' -A 3 /etc/passwd: Displays lines containing the pattern “root” and 3 lines after them in the file /etc/passwd.
 grep -i -v 'bin' /etc/passwd: Displays all the lines in the file /etc/passwd that do not contain the pattern “bin”
 grep -i '^[a-z]' /etc/ssh/sshd_config: Displays all lines of the file /etc/ssh/sshd_config starting with a letter.
-sed 's/A/Z/g; s/c/e/g': Replaces all characters A and c from input to Z and e respectively.
+tr "A" "Z" | tr "c" "e": Replaces all characters A and c from input to Z and e respectively.
 tr -d "cC": Removes all letters c and C from input
