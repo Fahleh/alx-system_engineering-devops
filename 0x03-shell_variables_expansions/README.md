@@ -12,7 +12,7 @@ echo $(($BREATH**$LOVE)): Displays the result of BREATH to the power LOVE.
 echo $((2#$BINARY)): Converts a number from base 2 to base 10.
 echo {a..z}{a..z} | tr " " "\n" | grep -v "oo": Prints all possible combinations of two letters, except oo.
 printf "%.2f\n" $NUM: Prints a number with two decimal places, followed by a new line.
-printf "%xf\n" $DECIMAL: Converts a number from base 10 to base 16.
+printf "%x\n" $DECIMAL: Converts a number from base 10 to base 16.
 tr "A-Za-z" "N-ZA-Mn-za-m": Encodes and decodes text using the rot13 encryption. Assume ASCII.
 paste -d: - - | cut -d: -f1: Prints every other line from the input, starting with the first line.
 printf "%o\n" $((5#$(echo "$WATER" | tr water 01234))) + $((5#$(echo "$STIR" | tr stir. 01234))) )) | tr 01234567 bestchol: I'm an instant star. Just add water and stir.
