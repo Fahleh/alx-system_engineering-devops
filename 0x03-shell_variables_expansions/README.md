@@ -6,3 +6,4 @@ env: Lists environment variables.
 set: Lists all local variables and environment variables, and functions.
 BEST="School": Creates a new local variable named BEST with value School.
 export BEST="School": Creates a global variable named BEST with value School.
+echo $((128 + $TRUEKNOWLEDGE)): Prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.
