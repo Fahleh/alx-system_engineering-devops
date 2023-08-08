@@ -4,4 +4,5 @@ PATH=$PATH:/action: Adds /action to the PATH. /action should be the last directo
 echo $PATH | tr ':' '\n' | wc -l: Counts the number of directories in the PATH.
 env: Lists environment variables.
 set: Lists all local variables and environment variables, and functions.
-BEST="School": Creates a new local variable names BEST with value School.
+BEST="School": Creates a new local variable named BEST with value School.
+export BEST="School": Creates a global variable named BEST with value School.
