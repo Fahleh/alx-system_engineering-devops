@@ -14,3 +14,4 @@ echo {a..z}{a..z} | tr " " "\n" | grep -v "oo": Prints all possible combinations
 printf "%.2f\n" $NUM: Prints a number with two decimal places, followed by a new line.
 printf "%xf\n" $DECIMAL: Converts a number from base 10 to base 16.
 tr "A-Za-z" "N-ZA-Mn-za-m": Encodes and decodes text using the rot13 encryption. Assume ASCII.
+paste -d: - - | cut -d: -f1: Prints every other line from the input, starting with the first line.
