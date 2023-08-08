@@ -10,3 +10,4 @@ echo $((128 + $TRUEKNOWLEDGE)): Prints the result of the addition of 128 with th
 echo $(($POWER / $DIVIDE)): Prints the result of POWER divided by DIVIDE, followed by a new line.
 echo $(($BREATH**$LOVE)): Displays the result of BREATH to the power LOVE.
 echo &((2#$BINARY)): Converts a number from base 2 to base 10.
+echo {a..z}{a..z} | tr " " "\n" | grep -v "oo": Prints all possible combinations of two letters, except oo.
