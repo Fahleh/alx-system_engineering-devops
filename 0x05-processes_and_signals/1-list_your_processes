@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-# Displays a list of currently running processes for all users
-
+# Displays a list of currently running processes for all users.
 ps -aux --forest
