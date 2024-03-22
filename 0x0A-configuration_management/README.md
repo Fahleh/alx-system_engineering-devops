@@ -8,8 +8,8 @@ Read or watch:
 - [Puppet lint](https://intranet.alxswe.com/rltoken/CRUMeEMdcX-UtbWsUM9xLQ)
 - [Puppet emacs mode](https://intranet.alxswe.com/rltoken/MzHXCntAkPzOqMnI6_rpWQ)
 
-## Requirements
-### General
+# Requirements
+## General
 - All your files will be interpreted on Ubuntu 20.04 LTS
 - All your files should end with a new line
 - A README.md file at the root of the folder of the project is mandatory
@@ -21,7 +21,7 @@ Read or watch:
 ## Note on Versioning
 Your Ubuntu 20.04 VM should have Puppet 5.5 preinstalled.
 
-### Install puppet
+## Install puppet
 ```c
 $ apt-get install -y ruby=1:2.7+1 --allow-downgrades
 $ apt-get install -y ruby-augeas
