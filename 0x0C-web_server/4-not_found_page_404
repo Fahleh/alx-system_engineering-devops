@@ -2,7 +2,8 @@
 # Configures the Nginx server to have a new 404 error page
 STRING="Hello World!"
 
-REDIRECT="\n\tlocation /redirect_me {\n\t\treturn 301 https://youtu.be/dQw4w9WgXcQ;\n\t}\n"
+REDIRECT="\n\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=2bI8XsdNb-c&list=PLVipAi3U-Jos-gFKT434UTj2D9x7t83IH;\n\t}\n"
+
 FILE="/etc/nginx/sites-available/default"
 
 ERRORFILE="/usr/share/nginx/html/404error.html"
