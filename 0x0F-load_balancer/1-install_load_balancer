@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Install and configure HAproxy on a third server.
+sudo apt-get -y install software-properties-common
+sudo add-apt-repository -y ppa:vbernat/haproxy-2.5
+sudo apt-get -y update
+
+sudo apt-get -y install haproxy
+sudo sed -i -e '$aENABLED=1\n' /etc/default/haproxy
+sudo sed -i -e '$a\
+listen http-in\n\
+\tbind :80\n\
+\tbalance roundrobin\n\
+\tserver 501266-web-01 100.26.243.119:80 check\n\
+\tserver 501266-web-02 34.203.38.86:80 check\n' /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
