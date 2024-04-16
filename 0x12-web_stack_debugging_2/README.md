@@ -1,6 +1,6 @@
 # 0x12. Web stack debugging #2
 
-![Cat Image](vhttps://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/287/99littlebugsinthecode-holberton.jpg)
+!![Cat Image](vhttps://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/287/99littlebugsinthecode-holberton.jpg)
 
 ## Requirements
 
