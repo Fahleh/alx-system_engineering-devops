@@ -1,32 +1,32 @@
 #!/usr/bin/python3
-""" How many subs? """
+'''A module containing functions for working with the Reddit API.
+'''
 import requests
-from requests import get
-from sys import argv
+
+
+BASE_URL = 'https://www.reddit.com'
+"""The base API URL."""
 
 
 def number_of_subscribers(subreddit):
-    # Replace these values with your Reddit application details
-    client_id = 'E9UcaSW-udVFniBFD8Cf6w'
-    client_secret = 'tiSdtSn31T0MlzpPz3ZGyme7VhAuSg'
-    head = {'User-Agent': 'victor'}
-    # Reddit API endpoint for subreddit information
-    url = 'https://oauth.reddit.com/r/{}/about.json'.format(subreddit)
-
-    # Set up the headers with authentication
-    auth = requests.auth.HTTPBasicAuth(client_id, client_secret)
-    header = head
-
-    # Make a GET request to the API
-    response = requests.get(url, headers=header, auth=auth,
-                            allow_redirects=False)
-
-    # Check if the request was successful (status code 200) and not redirected
-    if response.status_code == 200 and not response.is_redirect:
-        # Parse the JSON response and extract the number of subscribers
-        data = response.json()
-        subscribers_count = data['data']['subscribers']
-        return subscribers_count
-    else:
-        # Return 0 for invalid subreddit or other errors
-        return 0
+    """
+        Retrieves the number of subscribers in a given subreddit.
+    """
+    call_header = {
+        'Accept': 'application/json',
+        'User-Agent': ' '.join([
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+            'AppleWebKit/537.36 (KHTML, like Gecko)',
+            'Chrome/97.0.4692.71',
+            'Safari/537.36',
+            'Edg/97.0.1072.62'
+        ])
+    }
+    response = requests.get(
+        '{}/r/{}/about/.json'.format(BASE_URL, subreddit),
+        headers=call_header,
+        allow_redirects=False
+    )
+    if response.status_code == 200:
+        return response.json()['data']['subscribers']
+    return 0
